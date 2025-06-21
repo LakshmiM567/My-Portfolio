@@ -6,6 +6,7 @@ st.set_page_config(
     page_title="Contact Me!!",
     page_icon="📞",
     layout="wide",
+    initial_sidebar_state="expanded" 
 )
 
 st.markdown("<h1 style='color:greenyellow;'>Get In Touch With Me!</h1>", unsafe_allow_html=True)
