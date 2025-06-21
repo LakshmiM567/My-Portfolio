@@ -11,7 +11,7 @@ def get_base64_image(image_path):
         b64_data = base64.b64encode(img_file.read()).decode()
     return f"data:image/png;base64,{b64_data}"
 
-image_data = get_base64_image("images/lakshmi.png")
+image_data = get_base64_image("portfolio_folder/images/lakshmi.png")
 
 
 # CUSTOM CSS
