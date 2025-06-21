@@ -58,10 +58,10 @@ def load_lottie_animation(url):
 
 # ANIMATION AND IMAGE URL
 lottie_coding_url = "https://lottie.host/65e15d96-f94c-4bd2-8d0b-2208825a0b8d/MPUvNxB3eo.json"
-img_lottie_animation = Image.open("images/drones.png")
-img_lottie_animation1 = Image.open("images/face_rec.png")
-img_lottie_animation2 = Image.open("images/rtclock.jpg")
-profile_picture = Image.open("images/lakshmi.png")
+img_lottie_animation = Image.open("portfolio_folder/images/drones.png")
+img_lottie_animation1 = Image.open("portfolio_folder/images/face_rec.png")
+img_lottie_animation2 = Image.open("portfolio_folder/images/rtclock.jpg")
+profile_picture = Image.open("portfolio_folder/images/lakshmi.png")
 
 
 # ABOUT ME
