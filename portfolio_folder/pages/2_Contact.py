@@ -28,13 +28,6 @@ st.markdown(
 )
 
 
-# USE LOCAL CSS FOR CONTACT FORM
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-local_css("portfolio_folder/style/style.css")
-
-
 # CONTACT
 google_form_url = "google_form_url = "https://docs.google.com/forms/d/e/1FAIpQLS.../viewform?embedded=true"
 
