@@ -1,6 +1,6 @@
 import streamlit as st
 
-# PAGE CONFIGURATION
+# PAGE CONFIG
 st.set_page_config(
     page_title="Contact Me!!",
     page_icon="📞",
@@ -8,10 +8,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# PAGE HEADING
+# TITLE
 st.markdown("<h1 style='color:greenyellow;'>Get In Touch With Me!</h1>", unsafe_allow_html=True)
 
-# BACKGROUND STYLING
+# BACKGROUND
 st.markdown(
     """
     <style>
@@ -26,21 +26,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# LOAD LOCAL CSS (optional if you have form styles)
-def local_css(file_name):
-    try:
-        with open(file_name) as f:
-            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    except:
-        pass
-
-local_css("portfolio_folder/style/style.css")
-
 # CONTACT FORM HTML
 contact_form = """
 <form action="https://formsubmit.co/lakshmipmurali567@gmail.com" method="POST" target="_blank">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://lakshmimurali-portfolio.streamlit.app/#thank-you">
+    <input type="hidden" name="_next" value="https://my-portfolio-gfwfww4chtrt2h5gj64ta.streamlit.app/#thank-you">
 
     <input type="text" name="name" placeholder="Enter your name" required 
         style="width: 100%; padding: 10px; border-radius: 5px; margin-bottom: 10px; border: 1px solid #ccc;"><br>
@@ -56,40 +46,28 @@ contact_form = """
 </form>
 """
 
-# LAYOUT COLUMNS FOR FORM
+# FORM LAYOUT
 with st.container():
     st.write("---")
-    st.write("##")
-    left_column, right_column = st.columns(2)
-    with left_column:
+    col1, col2 = st.columns([2, 1])
+    with col1:
         st.markdown(contact_form, unsafe_allow_html=True)
-    with right_column:
+    with col2:
         st.empty()
-
-# "THANK YOU" PLACEHOLDER (shown after redirect from FormSubmit)
-st.markdown('<a name="thank-you"></a>', unsafe_allow_html=True)
-st.markdown("## ✅ Thank you! Your message has been sent.", unsafe_allow_html=True)
 
 # BACK BUTTON
 st.markdown(
     """
     <style>
-    .main {
-        padding: 0;
-    }
     .stButton > button {
         background-color: #04AA6D;
         color: white;
         font-weight: bold;
         border: none;
         border-radius: 8px;
-        margin-top: 100px;
+        margin-top: 50px;
         padding: 10px 24px;
-        font-size: 10px;
-        transition: background-color 0.3s ease;
-    }
-    .stButton > button:hover {
-        background-color: #04AA6D;
+        font-size: 12px;
     }
     </style>
     """,
@@ -99,5 +77,3 @@ st.markdown(
 with st.container():
     if st.button("⬅"):
         st.switch_page("pages/1_Overview.py")
-
-
