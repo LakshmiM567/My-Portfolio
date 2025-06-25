@@ -41,24 +41,14 @@ with st.container():
     st.write("##")
 
     contact_form = """
-    <form action="https://formsubmit.co/lakshmipmurali567@gmail.com" method="POST" target="_blank">
+    <form action="https://formsubmit.co/lakshmipmurali567@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://your-deployed-app-url.streamlit.app/#thank-you">
-    
-        <input type="text" name="name" placeholder="Enter your name" required
-            style="width: 100%; padding: 10px; border-radius: 5px; margin-bottom: 10px;"><br>
-        <input type="email" name="email" placeholder="Enter email ID" required
-            style="width: 100%; padding: 10px; border-radius: 5px; margin-bottom: 10px;"><br>
-        <textarea name="message" placeholder="Type your message here!" required
-            style="width: 100%; height: 150px; padding: 10px; border-radius: 5px; margin-bottom: 10px;"></textarea><br>
-    
-        <button type="submit"
-            style="background-color: #04AA6D; color: white; font-weight: bold; border: none; border-radius: 8px; padding: 10px 24px;">
-            Send
-        </button>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter email ID" required>
+        <textarea name="message" placeholder="Type your message here!" required></textarea>
+        <button type="submit">Send</button>
     </form>
     """
-
     
     left_column, right_column = st.columns(2)
     with left_column:
