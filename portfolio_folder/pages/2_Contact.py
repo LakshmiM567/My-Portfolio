@@ -28,27 +28,37 @@ st.markdown(
 )
 
 
+# USE LOCAL CSS FOR CONTACT FORM
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+local_css("portfolio_folder/style/style.css")
+
+
 # CONTACT
-google_form_url = "google_form_url = "https://docs.google.com/forms/d/e/1FAIpQLS.../viewform?embedded=true"
+with st.container():
+    st.write("---")
+    st.write("##")
 
-st.markdown("""
-<div style="margin-top: 30px;">
-<iframe src="{form_url}" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
-Loading…
-</iframe>
-</div>
-""".format(form_url=google_form_url), unsafe_allow_html=True)"  # <-- Replace this with your actual form URL
+    contact_form = """
+    <form action="https://formsubmit.co/lakshmipmurali567@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter email ID" required>
+        <textarea name="message" placeholder="Type your message here!" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    """
+    
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+    with right_column:
+        st.empty()
 
-st.markdown("""
-<div style="margin-top: 30px;">
-<iframe src="{form_url}" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
-Loading…
-</iframe>
-</div>
-""".format(form_url=google_form_url), unsafe_allow_html=True)
 
 
-
+# BUTTON
 st.markdown(f"""
     <style>
     .main {{
