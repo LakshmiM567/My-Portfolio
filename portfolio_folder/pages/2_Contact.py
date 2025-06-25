@@ -48,7 +48,7 @@ Loading…
 """.format(form_url=google_form_url), unsafe_allow_html=True)
 
 
-# BUTTON 
+
 st.markdown(f"""
     <style>
     .main {{
