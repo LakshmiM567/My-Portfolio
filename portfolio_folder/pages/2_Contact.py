@@ -43,7 +43,7 @@ with st.container():
     contact_form = """
     <form action="https://formsubmit.co/lakshmipmurali567@gmail.com" method="POST" target="_blank">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://your-streamlit-app.streamlit.app/#thank-you">
+        <input type="hidden" name="_next" value="https://lakshmimurali-portfolio.streamlit.app/#thank-you">
     
         <input type="text" name="name" placeholder="Enter your name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
         <input type="email" name="email" placeholder="Enter email ID" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"><br><br>
