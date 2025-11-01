@@ -73,7 +73,7 @@ with st.container():
         st.markdown(
             """
                 <p style="color: beige; font-size: 18px;">
-                    I am an aspiring software developer with knowledge in Python. My main areas of focus include:
+                    I am an aspiring techie with knowledge in Python. My main areas of focus include:
                 </p>
             
             <ul style="color: beige; font-size: 16px;">
