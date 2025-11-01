@@ -85,7 +85,7 @@ with st.container():
         <div class="center-block">
             <img src="{image_data}" class="profile-pic" />
             <h1 class="typing">Hey, I am Lakshmi ! 👋</h1>
-            <p class="tagline">Software Developer</p>
+            # <p class="tagline">Software Developer</p>
         </div>
     """, unsafe_allow_html=True)
 
